@@ -31,16 +31,6 @@ A **gamified to-do list app** built with the **MERN stack** that motivates users
 
 ---
 
-## 🖥️ Screenshots
-
-| Dashboard | Avatar & XP |
-|------------|-------------|
-| ![Dashboard Screenshot](https://via.placeholder.com/500x280?text=Dashboard) | ![Avatar Screenshot](https://via.placeholder.com/500x280?text=Avatar+XP) |
-
-> Replace the placeholder URLs with your actual screenshots later.
-
----
-
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the repository
