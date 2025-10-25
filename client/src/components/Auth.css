@@ -1,0 +1,157 @@
+/* 🌗 Theme Variables (auto-linked to App theme) */
+.App.light {
+  --bg: #f9fafb;
+  --text: #2c3e50;
+  --accent: #2c3e50;
+  --button-bg: #2c3e50;
+  --button-text: #fff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+.App.dark {
+  --bg: #121212;
+  --text: #f9f9f9;
+  --accent: #f1c40f;
+  --button-bg: #f1c40f;
+  --button-text: #000;
+  --shadow: rgba(241, 196, 15, 0.3);
+}
+
+/* 🧭 Page Layout */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg);
+  transition: background 0.4s ease, color 0.3s ease;
+}
+
+/* 🧱 Card Box */
+.auth-box {
+  width: 360px;
+  padding: 40px 30px;
+  border-radius: 16px;
+  background: var(--bg);
+  box-shadow: 0 4px 30px var(--shadow);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* 🏷️ Title */
+.auth-box h2 {
+  color: var(--text);
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* ✏️ Inputs */
+.auth-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  transition: border 0.2s ease;
+}
+
+.auth-box input:focus {
+  border: 1px solid var(--accent);
+}
+
+/* 🔘 Buttons */
+.auth-box button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.auth-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow);
+  opacity: 0.9;
+}
+
+/* 💬 Switch text */
+.auth-box p {
+  margin-top: 15px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.auth-box p span {
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+
+.auth-box p span:hover {
+  opacity: 0.8;
+}
+
+/* 🌈 Animation */
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  .auth-box {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .auth-box h2 {
+    font-size: 22px;
+  }
+}
+/* 🎨 Avatar selection during signup */
+.avatar-selection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.avatar-option {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+.avatar-option:hover {
+  transform: scale(1.1);
+}
+
+.avatar-option.selected {
+  border: 2px solid #00c3ff;
+  box-shadow: 0 0 8px #00c3ff;
+}
